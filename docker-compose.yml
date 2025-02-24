@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    container_name: wisebit_test1
+    volumes:
+      - ./:/app
+    command: vendor/bin/phpunit src/user/tests
